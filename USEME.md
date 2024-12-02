@@ -30,70 +30,87 @@ Running `java ImageProcessor` with no arguments causes it to run with a interact
 
 ### load 
 Arguments: image-path image-name
+
 Loads image from specified path
 
 ### save 
 Arguments: image-path image-name
+
 Saves image with given name to specified path
 
 ### red-component 
 Arguments: image-name dest-image-name
+
 Creates greyscale image with red component of image with given name
 
 ### blue-component 
 Arguments: image-name dest-image-name
+
 Creates greyscale image with blue component of image with given name
 
 ### green-component 
 Arguments: image-name dest-image-name
+
 Creates greyscale image with green component of image with given name
 
 ### value-component 
 Arguments: image-name dest-image-name
+
 Creates greyscale image with value component of image with given name
 
 ### luma-component 
 Arguments: image-name dest-image-name
+
 Creates greyscale image with luma component of image with given name
 
 ### intensity-component 
 Arguments: image-name dest-image-name
+
 Creates greyscale image with intensity-component of image with given name
 
 ### horizontal-flip 
 Arguments: image-name dest-image-name
+
 Flips an image horizontally to create a new image
 
 ### vertical-flip 
 Arguments: image-name dest-image-name
+
 Flips an image vertically to create a new image
 
 ### brighten 
 Arguments: increment image-name dest-image-name
+
 Brightens image by given increment to create a new image
 
 ### sharpen 
 Arguments: image-name dest-image-name
+
 Sharpens image
 
 ### blur 
 Arguments: image-name dest-image-name
+
 Blurs image
 
 ### grayscale 
 Arguments: image-name dest-image-name
+
 Creates a grayscale image based on luma of image with given name
 
 ### sepia 
 Arguments: image-name dest-image-name
+
 Creates a sepia version of image with given name
 
 ### mosaic 
 Arguments: num-seeds image-name dest-image-name 
+
 Creates a mosaic version of an image given the number of seeds
 
 ### downscale 
 Arguments: width height image-name dest-image-name 
+
 Downscales the image to the given width and height
 
 ### menu
