@@ -1,0 +1,42 @@
+load res/cat.ppm cat1
+load res/cat2.png cat2
+load res/cat3.jpg cat3
+load res/cat4.bmp cat4
+
+red-component cat1 red-gs1
+green-component cat2 green-gs2
+blue-component cat3 blue-gs3
+value-component cat4 value-gs4
+luma-component cat1 luma-gs1
+intensity-component cat2 intensity-gs2
+brighten 15 cat3 brighter3
+brighten -15 cat4 darker4
+horizontal-flip red-gs1 gs-horizontal1
+vertical-flip green-gs2 gs-vertical2
+
+save res/cat-blue-gs.ppm blue-gs3
+save res/cat-value-gs.ppm value-gs4
+save res/cat-luma-gs.ppm luma-gs1
+save res/cat-intensity-gs.ppm intensity-gs2
+save res/cat-brighter.ppm brighter3
+save res/cat-darker.ppm darker4
+save res/cat-gs-horizontal.ppm gs-horizontal1
+save res/cat-gs-vertical.ppm gs-vertical2
+
+blur cat3 blurred3
+sharpen cat4 sharpened4
+grayscale cat1 grayscale1
+sepia cat2 sepia2
+
+save res/cat-blurred.png blurred3
+save res/cat-sharpened.jpg sharpened4
+save res/cat-grayscale.bmp grayscale1
+save res/cat-sepia.png sepia2
+
+downscale 300 200 cat1 downscaledDifferentDimension1
+downscale 319 239 cat1 downscaledSameDimension1
+
+save res/cat-downscaleDifferentDimension.png downscaledDifferentDimension1
+save res/cat-downscaleSameDimension.jpg downscaledSameDimension1
+
+quit
